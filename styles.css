@@ -11,6 +11,7 @@
 
             h1 {
             "font-family:verdana" style="color:blue;
+            text-shadow: 2px 2px red;
             } 
 body {
      background-color: #14CC7C;
