@@ -8,12 +8,13 @@
 
            h1 {
            "font-family:verdana";
-           text-shadow: 2px 2px Red;
+           text-shadow: 2px 2px lightblue;
+           color:snow;
            } 
 
 
 body {
-     background-color: #14CC7C;
+     background-color: #0F172A;
      font-family: Arial, sans-serif;
      text-align: center;
      padding: 60px;        
@@ -25,20 +26,20 @@ img {
 }
 
 a:link{
-           color:firebrick;
+           color:lightgray;
            text-decoration:none;
            display:inline-block;
            padding:10px 18px;
            border-radius:8px;
-           box-shadow: 0 3px 0 Darkgoldenrod;
+           box-shadow: 0 3px 0 Teal;
 }
 a:visited{
-           color:saddlebrown;
+           color:slategray;
            text-decoration:none;
 
 }
 a:hover{
-           color:darkred;
+           color:darkgray;
            text-decoration:underline;
            transition-delay: 250ms;
            transition-property: margin-right;
@@ -54,7 +55,7 @@ a:hover{
            
 }           
 a:active{
-           color:crimson;
+           color:silver;
            text-decoration:none;
 
 }
