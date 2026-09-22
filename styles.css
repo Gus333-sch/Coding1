@@ -34,11 +34,12 @@ a{
            padding:15px 18px;
            border-radius:8px;
            box-shadow: 0 3px 0 Teal;
+           transition: all 0.1s ease;
 }
 
 a:hover{
            color:darkgray;
-           text-decoration:underline;
+           text-decoration:none;
            transition-property: margin-right, blue;
            transition-delay: 1s;
 
@@ -49,5 +50,7 @@ a:hover{
 a:active{
            color:silver;
            text-decoration:none;
+           transform: translateY(3px);
+           box-shadow: 0 0 0 PowderBlue;
 
 }
