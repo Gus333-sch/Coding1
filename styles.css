@@ -37,14 +37,8 @@ a{
 a:hover{
            color:darkgray;
            text-decoration:underline;
-           transition-delay: 250ms;
-           transition-property: margin-right;
+           transition-property: margin-right, blue;
            transition-delay: 1s;
-           transition-property: background-color;
-           transition-delay: 1s;
-           transition-property: margin-right, color;
-           transition-delay: 1s, 250ms;
-           transition-property: margin-right, color;
 
            
 
