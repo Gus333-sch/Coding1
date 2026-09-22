@@ -25,23 +25,27 @@ img {
 }
 
 a:link{
-           background-color:firebrick;
+           color:firebrick;
            text-decoration:none;
+           display:inline-block;
+           padding:10px 18px;
+           border-radius:8px;
+           box-shadow: 0 3px 0 Darkgoldenrod;
 }
 a:visited{
-           background-color:saddlebrown;
+           color:saddlebrown;
            text-decoration:none;
 
 }
 a:hover{
-           background-color:darkred;
+           color:darkred;
            text-decoration:underline;
            transition-delay: 250ms;
            transition-property: margin-right;
 
 }
 a:active{
-           background-color:crimson;
+           color:crimson;
            text-decoration:none;
 
 }
