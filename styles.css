@@ -1,22 +1,20 @@
            div {
-           
   width: 320px #37ad3f;
   height: 50px #37ad3f;
   padding: 10px #37ad3f;
   border: 5px #37ad3f;
-  margin: 0;
-                       
+  margin: 0;                  
 }
 
+           h1 {
+           "font-family:verdana";
+           text-shadow: 2px 2px Red;
+           } 
 
-            h1 {
-            "font-family:verdana";
-            text-shadow: 2px 2px Red;
-            } 
+
 body {
      background-color: #14CC7C;
-     font-family: Ariel, sans-serif;
+     font-family: Arial, sans-serif;
      text-align: center;
-     padding: 60px;
-           
+     padding: 60px;        
 }
