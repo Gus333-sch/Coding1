@@ -33,11 +33,7 @@ a:link{
            border-radius:8px;
            box-shadow: 0 3px 0 Teal;
 }
-a:visited{
-           color:slategray;
-           text-decoration:none;
 
-}
 a:hover{
            color:darkgray;
            text-decoration:underline;
