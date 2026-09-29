@@ -1,4 +1,6 @@
-const words = ["apple", "banana", "cherry", "orange", "abricot", "grape", "kiwi"];
+const words = ["summit", "peak", "ridge", "glacier", "avalanche", "cliff", "boulder",
+"trail", "basecamp", "altitude", "cliffside", "crevasse", "slope",
+"sherpa", "expedition", "alpine", "rugged", "frostbite", "ascent", "trek"];
 
 function generateRandomWord() {
   
