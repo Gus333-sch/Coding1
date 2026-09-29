@@ -1,108 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sherpa Chatbot</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-color: #0F172A;
+      font-family: Arial, sans-serif;
+      color: snow;
+      text-align: center;
+      padding: 40px 20px;
+    }
 
-<html>
-      <title> Sherpa Chatbot</title>
+    .card {
+      max-width: 420px;
+      margin: 0 auto;
+      background-color: #1E293B;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
 
-      <style>
-      body {
-        background-color: #0F172A;
-        font-family: Arial, sans-serif;
-        color: snow;
-        text-align: center;
-        padding: 40px 20px;
-      }
+    .avatar {
+      width: 100px;
+      height: 70px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
 
-      .card {
-        max-width: 420px;
-        margin: 0 auto;
-        background-color: #1E293B;
-        border-radius: 12px;
-        padding: 24px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-      }
+    h1 {
+      font-size: 22px;
+      text-shadow: 2px 2px #2A4390;
+      margin-bottom: 16px;
+    }
 
-      h1 {
-        font-size: 22px;
-        text-shadow: 2px 2px #2A4390;
-        margin-bottom: 16px;
-      }
+    #chat {
+      text-align: left;
+      height: 220px;
+      overflow-y: auto;
+      background-color: #0F172A;
+      border-radius: 8px;
+      padding: 10px;
+      margin-bottom: 12px;
+    }
 
-      #chat {
-        text-align: left;
-        height: 220px;
-        overflow-y: auto;
-        background-color: #0F172A;
-        border-radius: 8px;
-        padding: 10px;
-        margin-bottom: 12px;
-      }
-      
+    #chat p {
+      margin: 6px 0;
+      padding: 8px 12px;
+      border-radius: 8px;
+      max-width: 80%;
+      word-wrap: break-word;
+    }
 
-      #chat p {
-        margin: 6px 0;
-        padding: 8px 12px;
-        border-radius: 8px;
-        max-width: 80%;
-        word-wrap: break-word;
-      }
+    .user-msg {
+      background-color: darkblue;
+      margin-left: auto;
+      text-align: right;
+    }
 
-      .user-msg {
-        background-color: darkblue;
-        margin-left: auto;
-        text-align: right;
-      }
+    .bot-msg {
+      background-color: #37ad3f;
+      color: #0F172A;
+      margin-right: auto;
+    }
 
-      .bot-msg {
-        background-color: #37ad3f;
-        color: #0F172A;
-        margin-right: auto;
-      }
+    #userInput {
+      width: 90%;
+      padding: 8px 10px;
+      border-radius: 6px;
+      border: none;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
 
-      #userInput {
-        width: 90%;
-        padding: 8px 10px;
-        border-radius: 6px;
-        border: none;
-        font-size: 14px;
-        margin-bottom: 12px;
-      }
+    .back-link {
+      display: inline-block;
+      margin-top: 16px;
+      color: whitesmoke;
+      background: darkblue;
+      text-decoration: none;
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+    }
 
-      .back-link {
-        display: inline-block;
-        margin-top: 16px;
-        color: whitesmoke;
-        background: darkblue;
-        text-decoration: none;
-        padding: 6px 14px;
-        border-radius: 8px;
-        font-size: 13px;
-      }
-
-      .back-link:hover {
-        color: darkgray;
-      }
-
-      
-
-      </style>
-      </head>
-      <link rel="stylesheet" href="styles.css">
-  <body>
-
-      
-      <div class="card">
-         
-          <img src="Mountainpic.jpg" alt="Mountain" class="avatar">
-          <h1>The All-Knowing Sherpa</h1>
-          <div id="chat"></div>
-          <input type="text" id="userInput" placeholder="Type a message..." onkeypress="handleUserInput(event)">
-          <script src="chatz.js"></script>
-          <a href="https://Gus333-sch.github.io/Coding1/">Return to main page</a> <br>
-      </div>
-        <script src="chatz.js"></script>
-      
-      </body>
+    .back-link:hover {
+      color: darkgray;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="Mountainpic.jpg" alt="Mountain" class="avatar">
+    <h1>The All-Knowing Sherpa</h1>
+    <div id="chat"></div>
+    <input type="text" id="userInput" placeholder="Type a message..." onkeypress="handleUserInput(event)">
+    <a href="https://Gus333-sch.github.io/Coding1/" class="back-link">Return to main page</a>
+  </div>
+  <script src="chatz.js"></script>
+</body>
 </html>
