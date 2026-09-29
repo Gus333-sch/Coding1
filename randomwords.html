@@ -1,23 +1,83 @@
 <!DOCTYPE html>
-<html>
-   <link rel="stylesheet" href="styles.css">
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Random word Generator</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-color: #0F172A;
+      font-family: Arial, sans-serif;
+      color: snow;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .card {
+      max-width: 380px;
+      margin: 0 auto;
+      background-color: #1E293B;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    h1 {
+      font-size: 22px;
+      text-shadow: 2px 2px #2A4390;
+      margin-bottom: 20px;
+    }
+
+    #genBtn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background: darkblue;
+      color: whitesmoke;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    #genBtn:hover {
+      background: #37ad3f;
+      color: #0F172A;
+    }
+
+    #wordDisplay {
+      margin-top: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      min-height: 40px;
+      color: #37ad3f;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 24px;
+      color: whitesmoke;
+      background: darkblue;
+      text-decoration: none;
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+    }
+
+    .back-link:hover {
+      color: darkgray;
+    }
+  </style>
 </head>
-
-
 <body>
+  <div class="card">
     <h1>Random word generator</h1>
-    <button onclick="generateRandomWord()">Generate Random Word</button>
-    <p id="wordDisplay" style="color: snow;"> </p>
+    <button id="genBtn" onclick="generateRandomWord()">Generate Random Word</button>
+    <p id="wordDisplay"></p>
+  </div>
 
-    <script src="randomWords.js"></script>
+  <a href="https://Gus333-sch.github.io/Coding1/" class="back-link">Return to main page</a>
 
-  
+  <script src="randomWords.js"></script>
 </body>
-<a href="https://Gus333-sch.github.io/Coding1/">Return to main page</a> <br>
-
-
-
-  
 </html>
+
