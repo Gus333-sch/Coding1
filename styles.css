@@ -35,6 +35,7 @@ a{
            border-radius:8px;
            box-shadow: 0 3px 0 Teal;
            transition: all 0.1s ease;
+           margin: 6px 0; 
 }
 
 a:hover{
