@@ -1,6 +1,27 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="styles.css">
+    <style>
+      .snakebox {
+        margin-top: 30px;
+        color: snow;
+      }
+
+      #snakeCanvas {
+        border: 3px solid #37ad3f;
+        border-radius: 8px;
+      }
+
+      .snakebox button {
+        margin: 10px 0;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 8px;
+        background: darkblue;
+        color: whitesmoke;
+        cursor: pointer;
+      }
+    </style>
   </head>
     <body> 
       <center>
@@ -20,8 +41,30 @@
     <a href="https://gus333-sch.github.io/Coding1/quiz.html">THE QUIZZZ!</a> <br>
     <a href="https://gus333-sch.github.io/Coding1/Game.html">Chess</a> <br>
     </center>
-  
+
+    <center class="snakebox">
+      <h2>Play Snake</h2>
+      <p id="snakeScore">Score: 0</p>
+      <canvas id="snakeCanvas" width="200" height="200"></canvas> <br>
+      <button onclick="startGame()">Restart</button>
+      <p>Arrow keys or WASD to move</p>
+    </center>
+
+    <script src="snake.js"></script>
+
   </body>
+
+
+
+
+
+
+
+
+
+
+  
+</html>
 
 
 
