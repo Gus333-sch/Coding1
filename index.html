@@ -2,12 +2,28 @@
   <head>
     <link rel="stylesheet" href="styles.css">
     <style>
+      body {
+        padding: 20px;
+      }
+
+      h1 {
+        margin: 10px 0;
+      }
+
+      img {
+        width: 250px;
+      }
+
       .snakebox {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  ...
-}
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 220px;
+        padding: 10px;
+        background-color: #1E293B;
+        border-radius: 12px;
+        color: snow;
+      }
 
       #snakeCanvas {
         border: 3px solid #37ad3f;
@@ -25,18 +41,18 @@
       }
     </style>
   </head>
-    <body> 
+    <body>
       <center>
         <div>
-          
+
           <h1> Mountains are so nice  </h1>
-      
+
         </div>
-      
+
          <img src="Mountainpic.jpg" alt="beautiful Mountains">
       </center>
-    <center>    
-    
+    <center>
+
     <a href="https://gus333-sch.github.io/Coding1/links.html">Links page</a> <br>
     <a href="https://gus333-sch.github.io/Coding1/randomwords.html">Random words generator</a> <br>
     <a href="https://gus333-sch.github.io/Coding1/chatbot.html">The Sherpa Chatbot</a> <br>
@@ -45,7 +61,8 @@
     </center>
 
     <center class="snakebox">
- <h2 style="color: whitesmoke;">Play Snake</h2>
+      <h2 style="color: whitesmoke;">Play Snake</h2>
+
       <p id="snakeScore">Score: 0</p>
       <canvas id="snakeCanvas" width="200" height="200"></canvas> <br>
       <button onclick="startGame()">Restart</button>
@@ -55,21 +72,7 @@
     <script src="Snake.js"></script>
 
   </body>
-
-
-
-
-
-
-
-
-
-
-  
 </html>
-
-
-
 
 
 
