@@ -15,12 +15,12 @@ const chatbotResponses = {
   "thanks": "No problem!",
   "who made you": "I was made for a coding class project!",
   "default": "I'm not sure how to answer that. Would you like to talk about mountains?",
-};
+}; // the chatbot's answers: the word you type on the left, its reply on the right
 
 function handleUserInput(event){
   if (event.key === 'Enter') {
       const userInput = document.getElementById("userInput").value;
-      const chat = document.getElementById("chat");
+      const chat = document.getElementById("chat"); // runs every time a key is pressed in the text box
 
   // Clear the input field
   document.getElementById("userInput").value = "";
